@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyy Solutions – Digitale Visitenkarte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #fdfdfd;
+      color: #1a1a1a;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #222;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 12px;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 24px;
+      padding: 50px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      animation: slideUp 1.2s ease-out;
+    }
+
+    .card h2 {
+      color: #111;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .link-button {
+      background: linear-gradient(135deg, #FFDD80, #FDCB6E);
+      color: #111;
+      padding: 16px 28px;
+      border: none;
+      border-radius: 16px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(255, 221, 128, 0.4);
+    }
+
+    .link-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(255, 221, 128, 0.5);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+      padding-bottom: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kyy Solutions</h1>
+    <p>Design. Automatisierung. Vision.</p>
+  </header>
+
+  <section class="card">
+    <h2>Mein Portfolio</h2>
+    <div class="links">
+      <a class="link-button" href="https://deine-hauptseite.de/motion-design" target="_blank">🎞️ Motion Design</a>
+      <a class="link-button" href="https://deine-hauptseite.de/gruenderberatung" target="_blank">💼 Gründerberatung</a>
+      <a class="link-button" href="https://deine-hauptseite.de/uebersetzungen" target="_blank">🌍 Übersetzungen</a>
+      <a class="link-button" href="https://deine-hauptseite.de/fotografie" target="_blank">📷 Foto & Video</a>
+      <a class="link-button" href="https://deine-hauptseite.de/ki" target="_blank">🤖 KI & Automatisierung</a>
+      <a class="link-button" href="mailto:kontakt@kyy.solutions">📬 Kontakt aufnehmen</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kyy Solutions – Illia Ilnytskyy</p>
+  </footer>
+</body>
+</html>
